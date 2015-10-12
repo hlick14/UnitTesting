@@ -29,9 +29,9 @@ public class TestCounter extends TestCase {
     }
     public void teststep() {
         int amount =3;
-        int result = counter.step(amount);
         counter.step(amount);
-        assertEquals("Normal Case", 3,result);
+        int result = counter.step(amount);
+        assertEquals("Normal Case", 6,result);
         counter.step(amount);
         result =counter.step(amount);
         assertEquals("Rollover case",2, result);
