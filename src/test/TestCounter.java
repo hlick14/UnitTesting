@@ -1,4 +1,4 @@
-import org.junit.Test;
+
 
 import agile.labs.unit.Counter;
 import junit.framework.TestCase;
