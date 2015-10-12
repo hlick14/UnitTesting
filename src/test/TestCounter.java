@@ -27,6 +27,15 @@ public class TestCounter extends TestCase {
         result = counter.increment();
         assertEquals("Boundry case",0, result) ;
     }
+    public void teststep() {
+        int amount =3;
+        int result = counter.step(amount);
+        counter.step(amount);
+        assertEquals("Normal Case", 3,result);
+        counter.step(amount);
+        result =counter.step(amount);
+        assertEquals("Rollover case",2, result);
+    } 
 
 
 }
